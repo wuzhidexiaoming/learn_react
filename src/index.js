@@ -5,7 +5,6 @@ import App from './App';
 import Test from './Test'
 import reportWebVitals from './reportWebVitals';
 
-console.log(App())
 ReactDOM.render(
   <React.StrictMode>
     <App/>
