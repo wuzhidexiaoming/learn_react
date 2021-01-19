@@ -7,30 +7,46 @@ import Toggle from "./components/Toggle";
 import LearnJudgment from "./components/LearnJudgment";
 import LoginControl from "./components/LoginControl/index";
 import TestRoute from "./components/TestRoute/TestRoute";
+import Person from "./components/Person";
+import FunctionCom from "./components/FunctionCom";
+
 function App() {
   return (
     <div className="App">
       <div>
-        TextOne: <TextOne />
+        <span className={"component-name"}>TextOne</span>: <TextOne />
       </div>
       <div>
-        Clock: <Clock />
+        <span className={"component-name"}>Clock</span>: <Clock />
       </div>
       <div>
-        Toggle:
+        <span className={"component-name"}>Toggle</span>:
         <Toggle />
       </div>
       <div>
-        LearnJudgment
+        <span className={"component-name"}>LearnJudgment</span>
         <LearnJudgment />
       </div>
       <div>
-        LoginControl
+        <span className={"component-name"}>LoginControl</span>
         <LoginControl />
       </div>
       <div>
-        TestRoute
+        <span className={"component-name"}>TestRoute</span>
         <TestRoute />
+      </div>
+      <div>
+        <span className={"component-name"}>Person</span>
+        {[
+          { name: "xiaoming", age: 19, sex: "男" },
+          { name: "xiaohong", age: 24, sex: "女" },
+        ].map((person) => (
+          <Person key={person.name} {...person} />
+        ))}
+      </div>
+      <div>
+        <span className={"component-name"}>FunctionCom</span>
+        <FunctionCom />
       </div>
     </div>
   );

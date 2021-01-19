@@ -10,9 +10,9 @@ const router = [
     component: <ComponentTwo />,
   },
 ];
-function Test() {
-  return <div>Test组件</div>;
-}
+// function Test() {
+//   return <div>Test组件</div>;
+// }
 let routeList = router.map((route, index) => {
   // TODO:如何把 div 标签换成组件呢?
   return <div key={index}>{route.component}</div>;
