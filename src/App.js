@@ -11,6 +11,7 @@ import Person from "./components/Person";
 import FunctionCom from "./components/FunctionCom";
 import Sup from "./components/Sup/Sup";
 import LearnRef from "./components/LearnRef";
+import Login from "./components/Login/Login";
 // TODO: 可以将 import 引入的东西 放到一个数组中么
 const route = [];
 function App() {
@@ -56,8 +57,12 @@ function App() {
         <Sup />
       </div>
       <div>
-        <span>LearnRef</span>
+        <span className={"component-name"}>LearnRef</span>
         <LearnRef />
+      </div>
+      <div>
+        <span className={"component-name"}>Login</span>
+        <Login />
       </div>
     </div>
   );
