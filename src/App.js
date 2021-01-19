@@ -9,7 +9,10 @@ import LoginControl from "./components/LoginControl/index";
 import TestRoute from "./components/TestRoute/TestRoute";
 import Person from "./components/Person";
 import FunctionCom from "./components/FunctionCom";
-
+import Sup from "./components/Sup/Sup";
+import LearnRef from "./components/LearnRef";
+// TODO: 可以将 import 引入的东西 放到一个数组中么
+const route = [];
 function App() {
   return (
     <div className="App">
@@ -47,6 +50,14 @@ function App() {
       <div>
         <span className={"component-name"}>FunctionCom</span>
         <FunctionCom />
+      </div>
+      <div>
+        <span className={"component-name"}>Sup</span>
+        <Sup />
+      </div>
+      <div>
+        <span>LearnRef</span>
+        <LearnRef />
       </div>
     </div>
   );

@@ -1,24 +1,27 @@
-import React from 'react'
+import React from "react";
 
 class Toggle extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      isToggle: false
-    }
+      isToggle: false,
+    };
   }
 
   changeFlag = () => {
     this.setState(() => ({
-      isToggle: !this.state.isToggle
-    }))
-  }
+      isToggle: !this.state.isToggle,
+    }));
+    console.log(this);
+  };
 
   render() {
     return (
-      <button onClick={this.changeFlag}>{this.state.isToggle ? "on" : 'off'}</button>
-    )
+      <button onClick={this.changeFlag}>
+        {this.state.isToggle ? "on" : "off"}
+      </button>
+    );
   }
 }
 
-export default Toggle
+export default Toggle;
