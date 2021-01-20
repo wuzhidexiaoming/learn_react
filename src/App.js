@@ -13,6 +13,7 @@ import Sup from "./components/Sup/Sup";
 import LearnRef from "./components/LearnRef";
 import Login from "./components/Login/Login";
 import Select from "./components/LearnForm/Select";
+import Count from "./components/Count";
 // TODO: 可以将 import 引入的东西 放到一个数组中么
 const components = [
   <TextOne />,
@@ -27,6 +28,7 @@ const components = [
   <LearnRef />,
   <Login />,
   <Select />,
+  <Count />,
 ];
 console.log(components);
 function App() {
