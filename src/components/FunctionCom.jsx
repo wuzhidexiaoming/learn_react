@@ -1,3 +1,4 @@
+import React from "react";
 function FunctionCom() {
   console.log(this);
   let test = () => {
