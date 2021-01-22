@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-// import Test from './Test'
+import Test from './Test'
 // import ClassComponent from './ClassComponent'
-// import TextOne from "./components/TextOne";
+import TextOne from "./components/TextOne";
 // import Clock from "./components/Clock";
 import Toggle from "./components/Toggle";
 // import LearnJudgment from "./components/LearnJudgment";
@@ -17,7 +17,7 @@ import LearnRef from "./components/LearnRef";
 import Count from "./components/Count";
 // TODO: 可以将 import 引入的东西 放到一个数组中么
 const components = [
-  // <TextOne />,
+  <TextOne />,
   // <Clock />,
   <Toggle />,
   // <LearnJudgment />,
