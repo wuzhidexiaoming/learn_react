@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Test from './Test'
+import Test from "./Test";
 // import ClassComponent from './ClassComponent'
 import TextOne from "./components/TextOne";
 // import Clock from "./components/Clock";
